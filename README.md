@@ -12,10 +12,10 @@ The expected number of events is computed using the following code: https://gith
 
 ### Required Libraries 
 The following Python libraries are required:
-numpy  
-math  
-scipy.integrate  
-sys
+- numpy  
+- math  
+- scipy.integrate  
+- sys
 
 ### How to run the code
 Run the main script using Python3:
