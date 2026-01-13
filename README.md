@@ -8,7 +8,7 @@ The expected number of Dark Matter events is defined as: ![n_evt](https://latex.
 ## Limit evaluation
 
 This repository contains code to evaluate limits for both **Spin-Dependent (SD)** and **Spin-Independent (SI)** interactions.  
-The expected number of events is computed using the following code: https://github.com/antorita/cygno_sensitivity/tree/main
+The expected number of events ($N_{DM_{evt}}$) is computed using the following code: https://github.com/antorita/cygno_sensitivity/tree/main
 
 ### Required Libraries 
 The following Python libraries are required:
@@ -27,7 +27,7 @@ where &lt;option&gt; can be:
 SD -> evaluate the Spin-Dependent case  
 SI -> evaluate the Spin-Independent case  
 
-After running the script, a new file named lim_output.txt will be created containing all the computed values.
+After running the script, a new file named lim_output.txt will be created containing the upper limit on the WIMP–nucleon elastic cross section for each mass.
 
 ### How to visualize the results
 To generate plots from the output, run:
@@ -38,7 +38,7 @@ python3 plot.py
 ### Configuration Parameters (lim.py)
 The following variables **must be set by the user in lim.py**:
 - Energy threshold [ee]: [LowThre](https://github.com/antorita/limit_evaluation/blob/944f0930cbc719cb323307b12198d9d35f2bb056/lim.py#L41)
-- correct exposuretime [days]:: [Daqtime](https://github.com/antorita/limit_evaluation/blob/944f0930cbc719cb323307b12198d9d35f2bb056/lim.py#L44)
+- correct exposuretime [days]: [Daqtime](https://github.com/antorita/limit_evaluation/blob/944f0930cbc719cb323307b12198d9d35f2bb056/lim.py#L44)
 - working pressure: [workingpressure](https://github.com/antorita/limit_evaluation/blob/944f0930cbc719cb323307b12198d9d35f2bb056/lim.py#L45)
 - sensitive volume: [volume](https://github.com/antorita/limit_evaluation/blob/944f0930cbc719cb323307b12198d9d35f2bb056/lim.py#L46)
 - Expected number of Dark Matter events: [Nev](https://github.com/antorita/limit_evaluation/blob/944f0930cbc719cb323307b12198d9d35f2bb056/lim.py#L75)
